@@ -1,0 +1,59 @@
+.main_container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+  
+
+  .content {
+    color: #aaa;
+  }
+  .details {
+    & article {
+      opacity: 0.8;
+      width: $pageWidthScreen;
+      color: #aaa;
+      color: #79a;
+      background-color: white;
+      padding: 0em;
+      box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+      border: solid 1px #aaa;
+      border-radius: 5px;
+      margin: 3em;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow: hidden;
+      & h2 {
+        padding: 0.2em;
+        background-color: #ccc;
+        background-color: #79a;
+        color: white;
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      & .imageContainer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 1em;
+        & .screenshot {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      & .textContainer {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        padding: 1em;
+        & .description {
+          padding: 0.2em;
+        }
+      }
+      & h3 {
+        padding: 0.2em;
+      }
+      & .project-entry {
+        padding: 0.2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+footer {
+  background-color: #125;
+  color: white;
+  background-color: rgba($color: #7b5, $alpha: 0.9);
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 10em;;
+
+  & .container {
+    width: $pageWidthScreen;
+    display: block;
+  }
+}

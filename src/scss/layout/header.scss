@@ -1,0 +1,27 @@
+header {
+  background-color: rgba($color: rgb(113, 197, 48), $alpha: 0.9);
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  & .container {
+    width: $pageWidthScreen;
+
+    & h1 {
+      margin: 0px;
+      padding: 1em;
+      display: inline-block;
+    }
+    & .pofile-pict {
+      margin: 1em;
+      width: 5em;
+      height: 5em;
+      object-position: 0px 0px;
+      object-fit: cover;
+      border-radius: 100%;
+      float: right;
+    }
+  }
+}
